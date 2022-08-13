@@ -71,16 +71,6 @@ function removehost() {
    ssh-keygen -R "$1"
 }
 
-function weather() {
-   city="$1"
-
-   if [ -z "$city" ]; then
-      city="Antwerp"
-   fi
-
-   eval "curl http://wttr.in/${city}"
-}
-
 alias mysqladm='mysql -u root'
 
 # Scrape a single webpage with all assets
@@ -105,7 +95,7 @@ function commit() {
 }
 
 xdebug() {
-   iniFileLocation="/usr/local/etc/php/7.4/php.ini";
+   iniFileLocation=`php -i | grep /.+/php.ini -oE`;
    
    currentLine=`cat $iniFileLocation | grep xdebug.so`
 
