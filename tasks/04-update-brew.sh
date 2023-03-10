@@ -1,0 +1,2 @@
+# Update brew
+brew update

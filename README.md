@@ -1,17 +1,17 @@
 # Dotfiles
 
-Based on the wonderful [dotfiles by Freek](https://github.com/freekmurze/dotfiles)
+## Setup
 
-You can install them by cloning the repository as `.dotfiles` in your home directory and running the bootstrap script.
+1. Make sure the `git` command is available. On macOS, simply run the `git` command and install the Xcode tools.
+
+2. Clone the dotfiles repo
 
 ```
-git clone git@github.com:SamuelNitsche/dev-dotfiles.git .dotfiles
-cd .dotfiles
-./bootstrap
+git clone --recursive git@github.com:samuelnitsche/dotfiles.git ~/.dotfiles
 ```
 
-The bootstrap script can be run by cd-ing into the `.dotfiles` directory and performing this command:
+3. Setup
 
-```bash
-./bootstrap
+```
+cd ~/.dotfiles && ./setup.sh
 ```
