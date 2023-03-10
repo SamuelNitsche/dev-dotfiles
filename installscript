@@ -65,23 +65,6 @@ echo 'Install ncdu'
 echo '------------'
 brew install ncdu
 
-echo 'Install hub'
-echo '-----------'
-brew install hub
-
-echo 'Install ack'
-echo '-----------'
-brew install ack
-
-echo 'Install doctl'
-echo '-------------'
-brew install doctl
-
-
-echo 'Install some nice quicklook plugins'
-echo '-----------------------------------'
-brew install --cask qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzip  suspicious-package
-
 echo 'Install php'
 echo '-----------'
 brew tap shivammathur/php
@@ -145,10 +128,6 @@ brew services start mysql
 echo 'Install yarn'
 echo '------------'
 brew install yarn
-
-echo 'Install ghostscript'
-echo '-------------------'
-brew install ghostscript
 
 echo 'Install zsh-autosuggestions'
 echo '---------------------------'
