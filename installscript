@@ -133,6 +133,10 @@ echo 'Install zsh-autosuggestions'
 echo '---------------------------'
 brew install zsh-autosuggestions
 
+echo 'Install thefuck'
+echo '---------------------------'
+brew install thefuck
+
 echo '++++++++++++++++++++++++++++++'
 echo '++++++++++++++++++++++++++++++'
 echo 'All done!'
