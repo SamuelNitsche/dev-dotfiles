@@ -8,7 +8,6 @@ alias cu="composer update"
 alias cr="composer require"
 alias ci="composer install"
 alias cda="composer dump-autoload -o"
-alias larastan="vendor/bin/phpstan analyse"
 alias hostfile="sudo vi /etc/hosts"
 alias deploy='envoy run deploy'
 alias deploy-code='envoy run deploy-code'
@@ -19,8 +18,6 @@ alias pp="php artisan test --parallel"
 alias d="php artisan dusk"
 alias sshconfig="vi ~/.ssh/config"
 alias copykey='command cat ~/.ssh/id_ed25519.pub | pbcopy'
-alias sail='./vendor/bin/sail'
-alias tunnel='expose'
 
 # JavaScript
 alias jest="./node_modules/.bin/jest"
@@ -36,9 +33,6 @@ alias o="open ."
 
 # List all files colorized in long format
 alias l="ls -laF"
-
-# PhpStorm
-alias phpstorm='open -a /Applications/PhpStorm.app "`pwd`"'
 
 # PHP
 alias switch-php82="brew link --overwrite --force php"
@@ -73,10 +67,3 @@ alias sudo='sudo '
 
 # Scape webpage
 alias scrape="scrapeUrl"
-
-# Switch NPM
-alias npmnpm="npm config set registry https://registry.npmjs.org"
-alias npmspatie="npm config set registry https://npm.spatie.be"
-
-# Restart touch bar
-alias touchbar="killall ControlStrip"

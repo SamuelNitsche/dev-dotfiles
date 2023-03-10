@@ -58,11 +58,6 @@ function tinker()
   fi
 }
 
-#shortcut voor zhs quick-look command
-function ql() {
-   quick-look "$1"
-}
-
 archive () {
    zip -r "$1".zip -i "$1" ;
 }
@@ -70,8 +65,6 @@ archive () {
 function removehost() {
    ssh-keygen -R "$1"
 }
-
-alias mysqladm='mysql -u root'
 
 # Scrape a single webpage with all assets
 function scrapeUrl() {
