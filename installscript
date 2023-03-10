@@ -109,7 +109,7 @@ pecl install redis
 
 echo 'Install laravel envoy'
 echo '---------------------'
-composer global require "laravel/envoy=~2.0"
+composer global require laravel/envoy
 
 echo 'Install phpunit-watcher'
 echo '-----------------------'
