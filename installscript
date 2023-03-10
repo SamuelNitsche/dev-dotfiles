@@ -68,8 +68,8 @@ brew install ncdu
 echo 'Install php'
 echo '-----------'
 brew tap shivammathur/php
-brew install shivammathur/php/php@8.1
-brew link --overwrite --force php@8.1
+brew install shivammathur/php/php@8.2
+brew link --overwrite --force php@8.2
 
 echo 'Install composer'
 echo '----------------'
