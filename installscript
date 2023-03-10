@@ -65,6 +65,10 @@ echo 'Install ncdu'
 echo '------------'
 brew install ncdu
 
+echo 'Install git secret'
+echo '------------------'
+brew install git-secret
+
 echo 'Install php'
 echo '-----------'
 brew tap shivammathur/php
