@@ -2,6 +2,10 @@
 rm -rf $HOME/.zshrc
 ln -s $DOTFILES/shell/.zshrc $HOME/.zshrc
 
+# Add gitconfig
+rm -rf $HOME/.gitconfig
+ln -s $DOTFILES/shell/.gitconfig $HOME/.gitconfig
+
 # Add global gitignore
-ln -s $DOTFILES/shell/.gitignore-global $HOME/.gitignore-global
-git config --global core.excludesfile $HOME/.gitignore-global
+ln -s $DOTFILES/shell/.gitignore $HOME/.gitignore
+git config --global core.excludesfile $HOME/.gitignore
