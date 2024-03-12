@@ -1,8 +1,10 @@
 # PHP
+alias php="herd php"
 alias phpunit="vendor/bin/phpunit"
 alias phpunitw="phpunit-watcher watch"
 alias a="php artisan"
 alias ar="php artisan remote"
+alias composer="herd composer"
 alias c="composer"
 alias cu="composer update"
 alias cr="composer require"
@@ -19,9 +21,6 @@ alias d="php artisan dusk"
 alias sshconfig="vi ~/.ssh/config"
 alias copykey='command cat ~/.ssh/id_ed25519.pub | pbcopy'
 
-# JavaScript
-alias jest="./node_modules/.bin/jest"
-
 # Git
 alias gc="git checkout"
 alias gpo="git push origin"
@@ -33,13 +32,6 @@ alias o="open ."
 
 # List all files colorized in long format
 alias l="ls -laF"
-
-# PHP
-alias switch-php82="brew link --overwrite --force php"
-alias switch-php81="brew link --overwrite --force php@8.1"
-
-# Redis
-alias flush-redis="redis-cli FLUSHALL"
 
 # Show/hide hidden files in Finder
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"

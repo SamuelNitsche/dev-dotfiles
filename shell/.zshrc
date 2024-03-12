@@ -114,3 +114,5 @@ export LANG=de_DE.UTF-8
 for file in ~/.dotfiles/shell/{aliases,functions,path}.zsh; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file"
 done
+
+HOMEBREW_NO_AUTO_UPDATE=1

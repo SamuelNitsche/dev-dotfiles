@@ -15,11 +15,6 @@ function pf() {
    fi
 }
 
-# Docker
-function ssh-docker() {
-   docker exec -it "$@" bash
-}
-
 # Create a new directory and enter it
 function mkd() {
    mkdir -p "$@" && cd "$@"
@@ -76,10 +71,6 @@ function scrapeUrl() {
     wget --adjust-extension --convert-links --page-requisites --span-hosts --no-host-directories "$1"
 }
 
-function rector() {
-   docker run -v $(pwd):/project rector/rector:latest process /project/$1 --set php80 --autoload-file /project/vendor/autoload.php 
-}
-
 #  Commit everything
 function commit() {
   commitMessage="$*"
@@ -90,21 +81,6 @@ function commit() {
 
   git add .
   eval "git commit -a -m '${commitMessage}'"
-}
-
-xdebug() {
-   iniFileLocation=`php -i | grep /.+/php.ini -oE`;
-   
-   currentLine=`cat $iniFileLocation | grep xdebug.so`
-
-   if [[ $currentLine =~ ^#zend_extension ]];
-   then
-      sed -i -e 's/^#zend_extension/zend_extension/g' $iniFileLocation
-      echo "xdebug is now active";
-   else
-      sed -i -e 's/^zend_extension/#zend_extension/g' $iniFileLocation
-      echo "xdebug is now inactive";
-   fi
 }
 
 function db {
